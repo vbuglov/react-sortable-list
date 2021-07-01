@@ -1,0 +1,35 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  background-color: gray;
+  height: 50px;
+  width: 400px;
+  margin-bottom: 1px;
+  cursor: ns-resize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+li.active {
+  background-color: plum;
+  transition: all 0.3s;
+  box-shadow: 2px 4px 4px rgba(44, 44, 57, 0.15);
+  transform: translateX(1%);
+  margin: 5px 0;
+}
